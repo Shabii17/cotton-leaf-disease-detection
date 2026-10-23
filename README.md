@@ -1,7 +1,7 @@
 # Cotton Leaf Disease Detection
 
 Final Year Project, BS Information Technology, The Islamia University of Bahawalpur
-**Student:** Muhammad Shoaib Sajjad (F23BINFT1M01137) | **Supervisor:** Dr Munawar
+**Student:** Muhammad Shoaib Sajjad (F23BINFT1M01137) | **Supervisor:** Mr. Munawar Ahmad
 
 A web app where a farmer uploads or captures a photo of a cotton leaf and receives the likely disease,
 a confidence score and basic treatment advice in English or Urdu. Two transfer-learning models
@@ -11,14 +11,10 @@ a confidence score and basic treatment advice in English or Urdu. Two transfer-l
 | --- | --- |
 | Cotton | bacterial blight, leaf curl virus, healthy |
 
-> **Scope note:** the project scope is cotton only (agreed with the supervisor). The starter code was written for
-> cotton and wheat, so `src/config.py`, `app/advice.json` and `scripts/make_synthetic_dataset.py` still list the wheat
-> classes until they are removed (see "Changing the classes" below). Train only on cotton images.
-
 ## Features
 
 - Upload a JPG or PNG (max 10 MB) or take a photo with the phone camera
-- Crop and disease name, confidence percentage and top three results
+- Disease name, confidence percentage and top three results
 - Warning when the model is not sure (below 70%) or the image is not a supported leaf (below 40%)
 - Symptoms, treatment and prevention advice from an editable file (`app/advice.json`)
 - English and Urdu interface, works on a phone screen
@@ -70,8 +66,6 @@ To be filled in after training on real data.
 | --- | --- | --- |
 | MobileNetV2 | | |
 | EfficientNet-B0 | | |
-
-No real accuracy has been measured yet.
 
 ## Limitations
 
